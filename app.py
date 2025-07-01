@@ -8,7 +8,7 @@ import re
 st.set_page_config(page_title="Stack Overflow Tag Analyzer", layout="wide")
 st.title("🧠 Stack Overflow Tag Analyzer")
 
-tag = st.text_input("Enter a Stack Overflow tag (e.g., python, css, beauty, data-science)", value="python")
+tag = st.text_input("Enter a Stack Overflow tag", value="python")
 
 def fetch_questions(tag, pagesize=50):
     url = f"https://api.stackexchange.com/2.3/questions"
@@ -77,4 +77,4 @@ if st.button("Analyze"):
         st.dataframe(df)
 
         st.markdown("---")
-        st.markdown("✅ Real-time data from Stack Overflow • No login needed • Made with ❤️ using Streamlit")
+        st.markdown("Real-time data from Stack Overflow • No login needed • M1nza")
